@@ -73,12 +73,50 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   background-image: url(../img/backgrounds/bg_header.png);
-  background-position: center;
-  max-width: 1600px;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 800px;
   margin: 0 auto;
   padding: 35px 0 680px;
+  margin-bottom: 120px;
 }
 .header__menu {
   height: 85px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -31px;
+}
+.menu__item {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #4d4959;
+  margin: 0 31px;
+}
+.menu__dot {
+  width: 5px;
+  height: 5px;
+  background-color: #9bd5c1;
+  position: relative;
+}
+.menu__logo {
+  display: block;
+  position: relative;
+  width: 94px;
+  height: 85px;
+  background-image: url(../img/logos/main-logo.png);
 }
