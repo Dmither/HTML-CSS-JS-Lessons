@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import "reset.scss";
+
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.header {
+    background-color: #5e5373;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #ebe485;
+    }
+
+    &__menu {
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.menu {
+
+    &__icon {
+    }
+
+    &__body {}
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-left: 20px;
+        height: 20px;
+        width: 100px;
+        background-color: #ebe485;
+    }
+}
+.icon-menu {
+}
+
+.content {
+
+    &__threerows {
+        margin: 20px -10px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tworows {
+        margin: 0 -10px;
+        display: flex;
+        justify-content: center;}
+    
+    &__item {
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.block {
+    background-color: #259b95;
+    padding: 10px;
+    &__image {
+        height: 40px;
+        width: 100%;
+        background-color: #ebe485;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: white;
+    }
+}
+
+@media (max-width:1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+@media (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        max-width: none;
+    }
+    .content{
+        &__threerows{
+            flex-wrap: wrap;
+        }
+        &__tworows{
+            flex-wrap: wrap;
+        }
+        &__item{
+            max-width: 210px;
+        }
+    }
+}
