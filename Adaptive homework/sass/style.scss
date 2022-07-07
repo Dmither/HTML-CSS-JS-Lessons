@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import "reset.scss";
+
+
+.header {
+    background-image: url(../img/backgrounds/bg_header.png);
+    background-position: center;
+    max-width: 1600px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 35px 0 680px;
+    &__menu {
+        height: 85px;
+    }
+}
+.menu {
+
+    &__list {}
+
+    &__item {}
+}
