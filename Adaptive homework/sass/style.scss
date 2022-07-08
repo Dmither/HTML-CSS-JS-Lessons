@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import "reset.scss";
 
@@ -12,7 +12,6 @@
     height: 800px;
     margin: 0 auto;
     padding: 35px 0 680px;
-    margin-bottom: 120px;
     &__menu {
         height: 85px;
     }
@@ -48,5 +47,198 @@
         height: 85px;
         background-image: url(../img/logos/main-logo.png);
         
+    }
+}
+.promo {
+    background-color: #f7f7f7;
+    padding: 120px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 750px){
+        padding: 60px 0;
+    }
+    &__icon {
+
+    }
+    &__title {
+        margin: 35px 0;
+        font-family: Lato;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #353738;
+        
+    }
+    &__text {
+        margin: 0 100px;
+        font-family: Lato;
+        max-width: 1010px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 400;
+        color: #848789;
+        @media (max-width: 750px){
+            margin: 0 20px;
+        }
+    }
+}
+.bike {
+    display: flex;
+    @media (max-width: 750px)
+    {
+        flex-wrap: wrap;
+    }
+    &__icon {
+        
+    }
+    &__title {
+        margin: 31px 0 26px 0;
+        font-family: Lato;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #353738;
+    }
+    &__text {
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #848789;
+        @media (max-width: 750px){
+            margin: 0 -20px;
+        }
+    }
+}
+.bike-logo{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 750px){
+        height: 200px;
+    }
+}
+.bike-content{
+    max-width: 533px;
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 750px){
+        max-width: 100%;
+    }
+}
+.bike-image{
+    height: 200px;
+    width: 100%;
+    @media (max-width: 750px){
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+}
+.bike-one {
+    
+    &__logo {
+        background-image: url(../img/backgrounds/Olivia_BG.png);
+    }
+    &__content {
+    }
+    &__image {
+        background-image: url(../img/backgrounds/Olivia_Img.png);
+    }
+}
+.bike-two {
+    @media (max-width: 750px){
+        flex-wrap: wrap-reverse;
+    }
+    &__content {
+    }
+    &__image {
+        background-image: url(../img/backgrounds/Boriosa_Img.png);
+    }
+    &__logo {
+        background-image: url(../img/backgrounds/Boriosa_BG.png);
+    }
+}
+.bike-three {
+    &__logo {
+        
+        background-image: url(../img/backgrounds/Retro_BG.png);
+    }
+    &__content {
+        
+    }
+    &__image {
+        background-image: url(../img/backgrounds/Retro_Img.png);
+        
+    }
+    &__third-col {
+        @media (max-width: 950px){
+            display: none;
+        }
+        width:10%;
+        min-width: 208px;
+        background-image: url(../img/backgrounds/Retro_Third.png);
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.reviev {
+    &__title {
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 1.2;
+        text-transform: none;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #353738;
+        &>span{
+            font-weight: 300;
+        color: #848789;
+        }
+    }
+    &__text {
+        max-width: 850px;
+        font-style: italic;
+    }
+}
+.review {
+    &__dots {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    &__dot {
+        margin: 0 5px;
+        height: 11px;
+        width: 11px;
+        border: 1px solid #848789;
+        border-radius: 50%;
+        background-color: #f7f7f7;
+        &_active {
+            background-color: #9bd5c1;
+        }
     }
 }
